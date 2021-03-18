@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+        <!--link css:-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <title>Simple Calculator</title>
+
+    </head>
+
+    <body>
+
+        <!--The general container-->
+        <div class="calculator-container">
+
+            <div class="title-calculator"><h1>Simple Calculator</h1></div>
+
+            <div class="section-numbers">
+
+                <form action="">
+
+                    <div>
+                        <input type="button" class="number" id="one" value="1"  onclick="btn(value)">
+                        <input type="button" class="number" id="two" value="2" onclick="btn(value)">
+                        <input type="button" class="number" id="three" value="3" onclick="btn(value)">
+                        <input type="button" class="number" id="divider" value="/" onclick="btn(value)">
+                    </div>
+
+                    <div>
+                        <input type="button" class="number" id="four" value="4" onclick="btn(value)">
+                        <input type="button" class="number" id="five" value="5" onclick="btn(value)">
+                        <input type="button" class="number" id="six" value="6" onclick="btn(value)">
+                        <input type="button" class="number" id="multiply" value="*" onclick="btn(value)">
+                    </div>
+
+                    <div>
+                        <input type="button" class="number" id="seven" value="7" onclick="btn(value)"> 
+                        <input type="button" class="number" id="eight" value="8" onclick="btn(value)">
+                        <input type="button" class="number" id="nine" value="9" onclick="btn(value)">
+                        <input type="button" class="number" id="subtract" value="-" onclick="btn(value)">
+                    </div>
+
+                    <div>
+                        <input type="button" class="number" id="zero" value="0" onclick="btn(value)">
+                        <input type="button" class="number" id="point" value="." onclick="btn(value)">
+                        <input type="button" class="number" id="equal" value="=" onclick="calculate()">
+                        <input type="button" class="number" id="addition" value="+" onclick="btn(value)">
+                    </div>
+
+                    <!--images to clear / rewind calculator numbers:-->
+                    <div>
+                        <img src="./img/clean.png" class="clean" onclick="clean()">
+
+                        <img src="./img/backspace.png" class="backspace" onclick="backspace()">
+
+                    </div>
+
+                </form>
+                
+            </div>
+
+            <!--the results display-->
+            <div class="container-result">
+
+                <p class="result" id="viewfinder"></p>
+                
+            </div>
+        </div>
+
+        <!--Link JS:-->
+        <script src="simple-calculator.js"></script>
+    </body>
+
+</html>
